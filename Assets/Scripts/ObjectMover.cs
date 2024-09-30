@@ -21,8 +21,9 @@ public class ObjectMover : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        else if(this.gameObject.tag == "animal" && transform.position.z < -20){
+        else if(this.gameObject.tag == "animal" && transform.position.z < -15){
             Destroy(this.gameObject);
+            Debug.Log("Game Over!"); 
         }
 
     }
